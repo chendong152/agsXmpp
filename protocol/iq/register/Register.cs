@@ -87,6 +87,19 @@ namespace agsXMPP.protocol.iq.register
 			set	{ SetTag("email", value); }
 		}
 
+		public string Mobile
+		{
+			get	{ return GetTag("mobile"); }
+			set	{ SetTag("mobile", value); }
+		}
+
+        public string CheckCode
+        {
+            get { return GetTag("checkCode"); }
+            set { SetTag("checkCode", value); }
+        }
+
+
         /// <summary>
         /// Remove registration from the server
         /// </summary>

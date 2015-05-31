@@ -870,7 +870,7 @@ namespace agsXMPP.Xml.Dom
 			}
 		}
 
-        internal string StartTag()
+        public string StartTag()
         {
             using (StringWriter sw = new StringWriter())
             {
@@ -907,7 +907,7 @@ namespace agsXMPP.Xml.Dom
             }
         }
 
-	    internal string EndTag()
+	    public string EndTag()
 	    {
 	        if (Prefix == null)
                 return "</" + TagName + ">";
